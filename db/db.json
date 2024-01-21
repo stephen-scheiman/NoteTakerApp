@@ -38,5 +38,15 @@
         "title": "Another new note",
         "text": "Grow fish",
         "id": "1cea"
+    },
+    {
+        "title": "A very new note",
+        "text": "This is a new note that I will hopefully be able to delete some day",
+        "id": "968b"
+    },
+    {
+        "title": "To Do Today",
+        "text": "Fart",
+        "id": "c315"
     }
 ]
