@@ -1,36 +1,42 @@
 [
     {
         "title": "Test Title",
-        "text": "Test text"
+        "text": "Make breakfast",
+        "id": "e489"
     },
     {
         "title": "Test Title",
         "text": "Make breakfast",
-        "note_id": "e489"
-    },
-    {
-        "title": "Test Title",
-        "text": "Make breakfast",
-        "note_id": "c730"
+        "id": "c730"
     },
     {
         "title": "Test Title 7",
         "text": "Make breakfast 7",
-        "note_id": "a43f"
+        "id": "a43f"
     },
     {
         "title": "Test Title 8",
         "text": "7 Make breakfast 7",
-        "note_id": "5132"
+        "id": "5132"
     },
     {
         "title": "Test Title 8",
         "text": "7 Make breakfast 7",
-        "note_id": "90cd"
+        "id": "90cd"
     },
     {
         "title": "Test Title 8",
         "text": "7 Make breakfast 7",
-        "note_id": "35f8"
+        "id": "35f8"
+    },
+    {
+        "title": "New Note",
+        "text": "This is a new note",
+        "id": "b7d6"
+    },
+    {
+        "title": "Another new note",
+        "text": "Grow fish",
+        "id": "1cea"
     }
 ]

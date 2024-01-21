@@ -19,7 +19,7 @@ notes.post('/', (req, res) => {
     const newNote = {
       title,
       text,
-      note_id: uuid(),
+      id: uuid(),
     };
 
     readAndAppend(newNote, './db/db.json');
@@ -34,5 +34,29 @@ notes.post('/', (req, res) => {
     res.json('Error in posting new Note');
   }
 });
+
+// GET request for a single Note
+// notes.get('/:id', (req, res) => {
+//     console.log(req.params.id);
+//     if (req.params.id) {
+//       console.info(`${req.method} request received to get a single note`);
+//       const noteId = req.params.id;
+//       const {title,text,id} = req.body;
+//       console.log(title, text, noteId);
+//       readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
+//   }
+// });
+// GET request for a single review
+notes.get('/:id', (req, res) => {
+    if (req.params.id) {
+      console.info(`${req.method} request received to get a single a review`);
+      const notesId = req.params.id;
+          //res.status(200).json(notesId);
+          readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
+          console.log(notes.length);
+          return;
+        }
+      }
+    );
 
 module.exports = notes;
