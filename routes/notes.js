@@ -1,12 +1,12 @@
 // This code is adapted from Student exercise 24
 const notes = require('express').Router();
-const { readFromFile, writeToFile, readAndAppend } = require('../helpers/fsUtils');
+const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
 const uuid = require('../helpers/uuid');
 
 // GET Route for retrieving Notes
-notes.get('/', (req, res) =>
+notes.get('/', (req, res) => {
   readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
-);
+});
 
 // POST Route for submitting Notes
 notes.post('/', (req, res) => {
