@@ -1,6 +1,10 @@
 // This code is adapted from Student exercise 24
 const notes = require("express").Router();
-const { readFromFile, readAndAppend } = require("../helpers/fsUtils");
+const {
+  readFromFile,
+  readAndAppend,
+  writeToFile,
+} = require("../helpers/fsUtils");
 const uuid = require("../helpers/uuid");
 
 // GET Route for retrieving Notes
@@ -10,10 +14,27 @@ notes.get("/", (req, res) => {
 
 // DELETE Route for deleting Notes
 notes.delete("/:id", (req, res) => {
+  // is the request properly formed?
   if (req.params.id) {
-    const noteID = req.params.id;
-    console.log(noteID);
-    res.json(noteID);
+    // this variable will hold our json data while we work on it
+    let tmpArray = [];
+
+    // noteId holds the UUID of the note we want to delete
+    const noteId = req.params.id;
+
+    // read the db.json file and then assign the elements to an array
+    readFromFile("./db/db.json").then((data) => {
+      tmpArray = JSON.parse(data);
+
+      // create newArray from tmpArray filtered to remove the matching UUID
+      const newArray = tmpArray.filter((note) => note.id !== noteId);
+
+      // write newArray to the db.json file
+      writeToFile("./db/db.json", newArray);
+
+      // send a nice note mostly to fulfill the promise and prevent the app from hanging
+      res.json(`Successfully deleted note with ID:${noteId}`);
+    });
   }
 });
 

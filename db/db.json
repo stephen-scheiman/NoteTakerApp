@@ -1,52 +1,7 @@
 [
     {
-        "title": "Test Title",
-        "text": "Make breakfast",
-        "id": "e489"
-    },
-    {
-        "title": "Test Title",
-        "text": "Make breakfast",
-        "id": "c730"
-    },
-    {
-        "title": "Test Title 7",
-        "text": "Make breakfast 7",
-        "id": "a43f"
-    },
-    {
-        "title": "Test Title 8",
-        "text": "7 Make breakfast 7",
-        "id": "5132"
-    },
-    {
-        "title": "Test Title 8",
-        "text": "7 Make breakfast 7",
-        "id": "90cd"
-    },
-    {
-        "title": "Test Title 8",
-        "text": "7 Make breakfast 7",
-        "id": "35f8"
-    },
-    {
-        "title": "New Note",
-        "text": "This is a new note",
-        "id": "b7d6"
-    },
-    {
-        "title": "Another new note",
-        "text": "Grow fish",
-        "id": "1cea"
-    },
-    {
-        "title": "A very new note",
-        "text": "This is a new note that I will hopefully be able to delete some day",
-        "id": "968b"
-    },
-    {
-        "title": "To Do Today",
-        "text": "Fart",
-        "id": "c315"
+        "title": "This is my first note",
+        "text": "Hooray",
+        "id": "33ef"
     }
 ]
