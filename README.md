@@ -25,10 +25,10 @@
 
   github: http://www.github.com/stephen-scheiman
 
-  email: ssbscheiman@gmail.com
+  email: sbscheiman@gmail.com
 
   ## Application Repository
   https://github.com/stephen-scheiman/NoteTakerApp
 
   ## Link to Deployed Application
-  
+
