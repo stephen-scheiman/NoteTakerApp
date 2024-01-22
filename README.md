@@ -2,7 +2,7 @@
 
   # NoteTakerApp 
   ## Description
-  This application allows the user to create notes in order to manage their various tasks. Functionality includes creating, viewing and deleting notes. This was a valuable exercise in that it brought together all the elements of a fullstack application and tought me how to "wire it all together". 
+  This application allows the user to create notes in order to manage their various tasks. Functionality includes creating, viewing and deleting notes. This was a valuable exercise in that it brought together all the elements of a fullstack application and taught me how to "wire it all together". 
   ## Table of Contents
   1. [Installation](#installation)
   2. [Usage](#usage)
