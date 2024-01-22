@@ -1,10 +1,13 @@
-// This code is adapted from Student exercise 24
 const notes = require("express").Router();
+
+// Leverage the helper utils from previous exercises
 const {
   readFromFile,
   readAndAppend,
   writeToFile,
 } = require("../helpers/fsUtils");
+
+// Use the uuid helper to assign a unique ID to each note, we need this for DELETING notes to work
 const uuid = require("../helpers/uuid");
 
 // GET Route for retrieving Notes
@@ -45,13 +48,14 @@ notes.post("/", (req, res) => {
 
   // If all the required properties are present
   if (title && text) {
+
     // Variable for the object we will save
     const newNote = {
       title,
       text,
       id: uuid(),
     };
-
+  // use helper util to write new notes to db.json
     readAndAppend(newNote, "./db/db.json");
 
     const response = {
